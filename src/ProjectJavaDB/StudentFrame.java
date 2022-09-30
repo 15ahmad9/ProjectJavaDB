@@ -44,6 +44,7 @@ public class StudentFrame extends javax.swing.JFrame {
 
         } catch (SQLException e) {
             System.out.println(e.getMessage());
+            
         } catch (ClassNotFoundException ex) {
             Logger.getLogger(StudentFrame.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -96,7 +97,8 @@ public class StudentFrame extends javax.swing.JFrame {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtFirstNameActionPerformed(evt);
             }
-        });
+        }
+    );
 
         txtAverage.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
